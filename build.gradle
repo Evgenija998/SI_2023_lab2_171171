@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+}
+
+group 'com.'
+version '1.0'
+
+// Define the project name
+def indexNumber = "171171"
+def projectName = "SI_lab2_$171171"
+
+// Set the project name
+rootProject.name = projectName
+
+// Configure the source sets
+sourceSets {
+    main {
+        java {
+            srcDirs 'SI_lab2_171171/src/'
+        }
+    }
+}
+
+// Define dependencies
+dependencies {
+    // Add any necessary dependencies here
+    // Example: implementation 'com.example:library:1.0'
+}
+
+// Define the build tasks
+tasks {
+    // Set the main class for running the application
+    run {
+        mainClassName = 'SI_lab2_171171/src/SILab2.java' // Replace with your main class
+        // Add any additional configurations if needed
+    }
+
+    // Define additional tasks if needed
+}
+
+// Configure the project layout
+sourceSets.main.java.srcDir "SI_lab2_171171/src/SILab2.java"
+
+// Set the Java version compatibility
+targetCompatibility = JavaVersion.VERSION_11
